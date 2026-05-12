@@ -1,0 +1,120 @@
+.login-wrapper{         /*폰화면*/   
+    min-height: 100vh; /*화면 높이 만큼 최소 높이 확보*/
+    display: flex; /* 가로로 배치*/
+    justify-content: center; /*가로 방향 가운데 정렬*/
+    align-items:flex-start; /*세로 방향 위쪽부터 시작 */
+}
+
+.login-page{
+    width: 393px;
+    height: 852px;
+    border-radius: 50px;
+    background-color: #9C9C9C;
+    display: flex;
+    flex-direction: column; /*세로배치 
+    왜냐면 가로 배치를 column으로 하면 반대로 배치되어서*/
+    align-items: center;/* 세로 방향 가운데 정렬*/
+    padding: 250px 147px 500px 148px ;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.login-card{
+    width: 393px;
+    height: 900px;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+
+    padding: 70px 10px 50px  ;/*위 좌우 아래 여백*/
+
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+    min-height: 800px;
+    
+    
+}
+
+.login-title{
+    text-align: center;
+    margin-bottom: 20px;/*아래쪽 바깥 여백(입력창과의 아래여백)*/
+    font-size: 25px;
+}
+
+.login-form {
+  display: flex;/*입력칸들을*/
+  flex-direction: column;/*세로로배치*/
+  gap: 15px;
+  padding: 30px 35px 30px
+}
+
+.name-row{
+  display: flex;
+  gap: 3px;
+  width: 100%;/*부모크기만큼 꽉 채워라*/
+  
+}
+
+.name-row input{  /*name-row 안에 있는 모든 input*/
+    flex: 1; /*공간을 똑같이 나눠 써라*/
+    width: 0;/*이거는 깨지기 방지*/
+    min-width: 0;/*이거는 깨지기 방지*/
+}
+
+.login-input {
+  height: 37px;
+  padding: 0 20px; /*좌우 여백만 넣기 가능 부모가 로그인폼*/
+  border: none;/*자동 테두리때문에 없애라*/
+  border-radius: 1000px;
+  background-color: #EBEBEB;
+  color: #A8A5A5;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+.login-input-right{
+  height: 37px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 1000px 0 0 1000px;
+  background-color: #EBEBEB;
+  font-size: 12px;
+  color: #A8A5A5;
+  box-sizing: border-box;
+}
+
+.login-input-left{
+ height: 37px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 0 1000px 1000px 0;
+  background-color: #EBEBEB;
+  font-size: 12px;
+  color: #A8A5A5;
+  box-sizing: border-box;
+}
+.full{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.create-button{
+    margin-top: 40px;/*위쪽여백*/
+
+    border: none;
+    background: #000000;
+    color: #FFFFFF;
+
+    border-radius: 1000px;
+
+    height: 37px;
+    padding: 0 20px;
+
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+
+    box-shadow: 0 0 15px rgba(135, 133, 133, 1); 
+}
+
+.login-button:active {
+  /* 로그인 버튼이 클릭되었을 때의 스타일 */
+  transform: translateY(1px);
+}
